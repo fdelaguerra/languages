@@ -1,0 +1,158 @@
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+* {
+    box-sizing: inherit;
+}
+body {
+    font-family: "PT Serif", Garamond, Georgia, serif;
+    font-size: 1rem;
+    color: #000;
+    text-align: center;
+    margin: 0;
+}
+header {
+    padding: 1.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    background: #465C9B;
+    color:#FFF;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+}
+nav ul li {
+    margin: 0;
+    margin-left: 1rem;
+    font-size: 125%;
+}
+header a {
+    color: #FFF;
+}
+header a:hover {
+    color: #FFF;
+    text-decoration: none;
+    }
+
+h1 {
+    font-family: "PT Serif", Garamond, Georgia, serif;
+    font-size: 175%;
+    font-weight: normal;
+    margin: 0;
+    padding: 0 3.75rem;
+}
+.tagline {
+  background: #BDBDBD;
+  color: #FFF;
+  margin: 0;
+  padding: .1rem 5rem;
+  font-family: "PT Serif", Garamond, Georgia, serif;
+  font-style: italic;
+  font-size: 1.25rem;
+}
+h2 {
+  margin-bottom: 0;
+}
+div {
+  text-align: left;
+}
+
+img{
+  max-width: 100%;
+  
+  margin-bottom: 0;
+}
+
+/* to scale YouTube video, from # */
+iframe {
+  margin: 0 0 2rem 10%;
+  width: 80vw;
+  height: calc(80vw/1.77777778);
+}
+.container-heading {
+  display: grid;
+  grid:
+  [Title] ". heading" auto
+  / [space] 1fr [heading] 4fr;
+}
+.heading {
+  grid-area: heading;
+  font-family: "Cabin", Helvetica, "Franklin Gothic", sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+.byline {
+  margin: 1rem 0;
+  font-size: 1.75rem;
+}
+
+/* grid start */
+.grid {
+  display: grid;
+  grid:
+    [article] ". main ." auto
+    / [sidebar] 2fr [main] 3fr [img] 1.75fr;
+}
+.lead-box {
+  position: relative;
+  top: 35px;
+  left: 49px;
+  background: #F28379;
+  opacity: .8;
+  width: 355px;
+  height: 24px;
+  z-index: -1;
+  margin-left: -8.25rem;
+}
+.lead {
+  font-family: "Cabin", Helvetica, "Franklin Gothic", sans-serif;
+  font-size: 160%;
+  margin-left: -6rem;
+   
+}
+#story {
+  grid-area: main;
+  max-width: 675px;
+}
+.sidebar{
+  grid-area: sidebar;
+}
+.pics {
+  grid-area: pics;
+}
+.image {
+  float: right;
+  max-width: 100%;
+  margin: .5rem -20rem 0 2rem;
+}
+.caption {
+  font-family: "Cabin", Helvetica, "Franklin Gothic", sans-serif;
+  font-size: 85%;
+  text-align: center;
+
+}
+.lead-img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 2rem;
+}
+
+
+footer {
+  background: #3700B3;
+  color:#FFF;
+  margin: 0;
+  text-align: center;
+}
+/* Media Queries */
+@media screen and (max-width: 817px){
+  main {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+}
