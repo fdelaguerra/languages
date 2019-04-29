@@ -1,0 +1,81 @@
+h2 {
+    margin: 5rem;  
+    font-family: "Cabin", Helvetica, "Franklin Gothic", sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    
+}
+h3 {
+    font-family: "Cabin", Helvetica, "Franklin Gothic", sans-serif;
+    font-weight: 700;
+    font-size:1.6rem;
+    margin-bottom: 1.5rem;
+}
+
+/* flex container
+
+.container-flex {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+*/
+
+.gallery {
+    display: grid;
+    grid:
+        auto
+        / repeat(3, 1fr);
+    justify-items: center;
+    margin: 5rem;
+
+}
+.subgrid{
+    display: grid;
+    grid-template-rows: 550px 600px 600px auto;
+    grid-template-columns: 2fr 3fr 1.75fr;
+    grid-template-areas: 
+          ".        main    ." 
+          ".        main    ."  
+          ".        main    ." 
+          "chart    main    media"; 
+        
+}
+
+/*
+#f1 #f2 #f3 #f4 #f5 #f6 {
+    grid-area: main;
+}
+*/
+
+
+dl {
+    margin-bottom: 2rem;
+}
+/* 
+.bio {
+    max-width:  image size 
+}
+*/
+.chart {
+    grid-area: chart;
+}
+.feat {
+    grid-area: main;
+}
+/*
+.big h3 dl .bio {
+    grid-area: main;
+}
+*/
+
+.media {
+    grid-area: media;
+}  
+
+
+.bio {
+    max-width: 650px;
+
+}

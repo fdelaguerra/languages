@@ -1,0 +1,51 @@
+<html>
+    <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<script> type="text/javascript">
+google.charts.load('current', {
+  packages: ['corechart', 'bar']
+});
+google.charts.setOnLoadCallback(drawRightY);
+
+function drawRightY() {
+  var data = google.visualization.arrayToDataTable([
+    ['Language', 'Number of Speakers', { role: 'style' }],
+    ['Mandarin', 918000000, '#E1756B'],
+    ['Spanish', 460000000, '#E99A93'],
+    ['English', 379000000, '#E99A93'],
+    ['Hindi', 341000000, '#E99A93'],
+    ['Arabic', 319000000, '#E99A93'],
+  ]);
+
+  var materialOptions = {
+    chart: {
+      title: 'Most Spoken Languages in the World',
+      subtitle: 'Based on Ethnologue data'
+    },
+    hAxis: {
+      title: 'Total Population',
+      minValue: 0,
+    },
+    
+    vAxis: {
+      title: 'Language'
+    },
+    bars: 'horizontal',
+    colors:['#E1756B','#E99A93','#E99A93','#E99A93','#E99A93'],
+    axes: {
+      y: {
+        0: {
+          side: 'left'
+        }
+      }
+    }
+  };
+  var materialChart = new google.charts.Bar(document.getElementById('chart_div'));
+  materialChart.draw(data, materialOptions);
+}
+</script>
+
+<div id="chart_div"></div>
+</head>
+</html>

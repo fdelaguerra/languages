@@ -1,0 +1,213 @@
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+* {
+    box-sizing: inherit;
+}
+body {
+    font-family: "PT Serif", Garamond, Georgia, serif;
+    font-size: 1.2em;
+    color: #000;
+    margin: 0;
+}
+header {
+    padding: 1.25rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background: #465C9B;
+    color:#FFF;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+}
+nav ul li {
+    margin: 0;
+    
+    font-size: 125%;
+}
+
+header a {
+    color: #FFF;
+}
+header a:hover {
+    color: #FFF;
+    text-decoration: none;
+    }
+
+h1 {
+    font-family: "PT Serif", Garamond, Georgia, serif;
+    font-size: 175%;
+    font-weight: normal;
+    margin: 0;
+    padding: 0 3.75rem;
+}
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+.tagline {
+    background: #BDBDBD;
+    color: #FFF;
+    margin: 0;
+    padding: .1rem 5rem;
+    font-family: "PT Serif", Garamond, Georgia, serif;
+    font-style: italic;
+    font-size: 1.25rem;
+}
+#title {
+    margin: 0;
+}
+.container-heading {
+  margin-top: 3rem;
+}
+.heading {
+  grid-area: heading;
+  font-family: "Cabin", Helvetica, "Franklin Gothic", sans-serif;
+  font-weight: 700;
+  margin-bottom: 1.5em;
+}
+.byline {
+  font-weight: 500;
+  margin: 1rem 0;
+}
+.caption {
+    font-family: "Cabin", Helvetica, "Franklin Gothic", sans-serif;
+    font-weight: 700;
+    font-size: 85%;
+    text-align: center;
+}
+.lead-box {
+    position: relative;
+    top: 56px;
+    left: 52px;
+    background: #E1756B;
+    opacity: .85;
+    width: 390px;
+    height: 24px;
+    z-index: -1;
+    margin-left: -8.25rem;
+  }
+  .lead {
+    font-family: "Cabin", Helvetica, "Franklin Gothic", sans-serif;
+    font-size: 150%;
+    margin-left: -6rem;
+  
+  }
+  #story {
+    grid-area: main;
+    max-width: 675px;
+  }
+  .sidebar{
+    grid-area: sidebar;
+  }
+  .pics {
+    grid-area: pics;
+  }
+  .image {
+    
+  }
+  .fair {
+    max-width: 90%;
+    padding: 1rem;
+  }
+  
+  }
+  .pull-container {
+    float: left;
+    margin: 0 2rem 2.5rem -20rem;
+  }
+  .pull {
+    font-family: "Cabin", Helvetica, "Franklin Gothic", sans-serif;
+    font-weight: 500;
+    font-size: 150%;
+    letter-spacing: .035em;
+    color: #FFF;
+    background: #E1756B;
+    padding: .5rem;
+    margin: 0;
+    max-width: 400px;
+  }
+  .left {
+    text-align: left;
+    margin: 0 .5rem;
+  }
+  .lead-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 2rem;
+  }
+  
+  
+  footer {
+    background: #465C9B;
+    color:#FFF;
+    padding: 1rem;
+    margin-top: 100px;
+    text-align: center;
+  }
+
+
+    /* Media Queries*/
+@media screen and (max-width: 600px){
+img {
+    display: block;
+}
+#story-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+
+@media screen and (min-width: 817px){
+header {
+    flex-wrap: nowrap;
+}
+nav ul li {
+    margin-left: 1rem;
+    font-size: 100%;
+    
+}  
+.image{
+float: right;
+max-width: 100%;
+margin: .5rem -20rem 0 2rem;
+}
+
+  iframe .image .pull-container {
+    margin: 0;
+    max-width: 100%;
+  }
+
+  .lead-box {
+    margin-left: -8.25rem;
+  }
+  .lead {
+    
+    margin-left: -6rem;
+}
+/*
+.sidebar {
+    display: none;
+}
+.grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+        "main header"
+        "main georgia"
+        "main pairing"
+        "main bobwhite-quail"
+        "main readability"
+        "main line-length"
+        "main helvetica"
+        "typeface typeface"
+        "footer footer";
+    margin: 0;
+    */
