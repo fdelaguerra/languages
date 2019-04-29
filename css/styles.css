@@ -7,9 +7,8 @@ html {
 }
 body {
     font-family: "PT Serif", Garamond, Georgia, serif;
-    font-size: 1rem;
+    font-size: 1.2em;
     color: #000;
-    text-align: center;
     margin: 0;
 }
 header {
@@ -17,7 +16,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    align-content: center;
     background: #465C9B;
     color:#FFF;
 }
@@ -63,17 +61,30 @@ div {
 
 img{
   max-width: 100%;
-  
+
   margin-bottom: 0;
+}
+
+/* Links */
+a {
+  color: #465C9B;
+}
+a:hover {
+  text-decoration: none;
 }
 
 /* to scale YouTube video, from # */
 iframe {
-  margin: 0 0 2rem 10%;
+  margin: 0 10% 2rem 10%;
   width: 80vw;
   height: calc(80vw/1.77777778);
+  border: 0;
+}
+.video {
+  text-align: center;
 }
 .container-heading {
+  margin-top: 3rem;
   display: grid;
   grid:
   [Title] ". heading" auto
@@ -82,12 +93,14 @@ iframe {
 .heading {
   grid-area: heading;
   font-family: "Cabin", Helvetica, "Franklin Gothic", sans-serif;
-  font-size: 2.5rem;
-  margin-bottom: 1.5rem;
+  font-weight: 700;
+  font-size: 2.5em;
+  margin-bottom: 1.5em;
 }
 .byline {
+  font-weight: 500;
   margin: 1rem 0;
-  font-size: 1.75rem;
+  font-size: 1.75em;
 }
 
 /* grid start */
@@ -99,20 +112,20 @@ iframe {
 }
 .lead-box {
   position: relative;
-  top: 35px;
-  left: 49px;
-  background: #F28379;
-  opacity: .8;
-  width: 355px;
+  top: 56px;
+  left: 52px;
+  background: #E1756B;
+  opacity: .85;
+  width: 390px;
   height: 24px;
   z-index: -1;
   margin-left: -8.25rem;
 }
 .lead {
   font-family: "Cabin", Helvetica, "Franklin Gothic", sans-serif;
-  font-size: 160%;
+  font-size: 150%;
   margin-left: -6rem;
-   
+
 }
 #story {
   grid-area: main;
@@ -129,11 +142,35 @@ iframe {
   max-width: 100%;
   margin: .5rem -20rem 0 2rem;
 }
+.fair {
+  max-width: 90%;
+  padding: 1rem;
+}
 .caption {
   font-family: "Cabin", Helvetica, "Franklin Gothic", sans-serif;
+  font-weight: 700;
   font-size: 85%;
   text-align: center;
 
+}
+.pull-container {
+  float: left;
+  margin: 0 2rem 2.5rem -20rem;
+}
+.pull {
+  font-family: "Cabin", Helvetica, "Franklin Gothic", sans-serif;
+  font-weight: 500;
+  font-size: 150%;
+  letter-spacing: .035em;
+  color: #FFF;
+  background: #E1756B;
+  padding: .5rem;
+  margin: 0;
+  max-width: 400px;
+}
+.left {
+  text-align: left;
+  margin: 0 .5rem;
 }
 .lead-img {
   width: 100%;
@@ -143,16 +180,32 @@ iframe {
 
 
 footer {
-  background: #3700B3;
+  background: #465C9B;
   color:#FFF;
-  margin: 0;
+  padding: 1rem;
+  margin-top: 100px;
   text-align: center;
 }
 /* Media Queries */
-@media screen and (max-width: 817px){
-  main {
+@media screen and (max-width: 700px){
+  #story-grid {
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin: auto;
+  }
+  img{
+    display: block;
+    max-width: 100%;
+  }
+  .image {
+    float: none;
+  }
+
 }
+@media screen and (max-width: 817px){
+    iframe .image .pull-container {
+    margin: 0;
+    max-width: 100%;
+  }
 }

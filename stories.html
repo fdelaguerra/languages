@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<title>Stories</title>
+    <link href="https://fonts.googleapis.com/css?family=Cabin:500,700|PT+Serif:400,400i" rel="stylesheet">
+
+    <!-- with Playfair Display
+    <link href="https://fonts.googleapis.com/css?family=Cabin:500|PT+Serif|Playfair+Display:400,400i" rel="stylesheet">
+  -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/stories.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <script> type="text/javascript">
+    google.charts.load('current', {
+      packages: ['corechart', 'bar']
+    });
+    google.charts.setOnLoadCallback(drawRightY);
+    
+    function drawRightY() {
+      var data = google.visualization.arrayToDataTable([
+        ['Language', 'Number of Speakers', { role: 'style' }],
+        ['Mandarin', 918000000, '#E1756B'],
+        ['Spanish', 460000000, '#E99A93'],
+        ['English', 379000000, '#E99A93'],
+        ['Hindi', 341000000, '#E99A93'],
+        ['Arabic', 319000000, '#E99A93'],
+      ]);
+    
+      var materialOptions = {
+        chart: {
+          title: 'Most Spoken Languages in the World',
+          subtitle: 'Based on Ethnologue data'
+        },
+        hAxis: {
+          title: 'Total Population',
+          minValue: 0,
+        },
+        
+        vAxis: {
+          title: 'Language'
+        },
+        bars: 'horizontal',
+        colors:['#E1756B','#E99A93','#E99A93','#E99A93','#E99A93'],
+        axes: {
+          y: {
+            0: {
+              side: 'left'
+            }
+          }
+        }
+      };
+      var materialChart = new google.charts.Bar(document.getElementById('bar_chart_div'));
+      materialChart.draw(data, materialOptions);
+    }
+    </script>
+  </head>
+
+  <body>
+    <header>
+
+      <h1>A Common Language</h1>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Let's Talk</a></li>
+          <li><a href="#">Stories</a></li>
+          <li><a href="#">Sources</a></li>
+        </ul>
+      </nav>
+
+    </header>
+
+    <main>
+
+<h2 id="top">Grid</h2>
+        <!-- picture gallery -->
+        <div class="gallery" id="gallery">
+
+            <div class="thumbnail" id="pic1">
+                <a id="l1" href="#f1"><img src="images/gate-nc-web.jpg" alt="#"></a>
+            </div>
+
+            <div class="thumbnail" id="pic2">
+                <a id="l2" href="#f2"><img src="images/gate-nc-web.jpg" alt="#"></a>
+            </div>
+
+            <div class="thumbnail" id="pic3">
+                <a id="l3" href="#f3"><img src="images/gate-nc-web.jpg" alt="#"></a>
+            </div>
+
+            <div class="thumbnail" id="pic4">
+                <a id="l4" href="#f4"><img src="images/gate-nc-web.jpg" alt="#"></a>
+            </div>
+
+            <div class="thumbnail" id="pic5">
+                <a id="l5" href="#f5"><img src="images/gate-nc-web.jpg" alt="#"></a>
+            </div>
+
+            <div class="thumbnail" id="pic6">
+                <a id="l6" href="#f6"><img src="images/gate-nc-web.jpg" alt="#"></a>
+            </div>
+
+        </div>
+
+        <!-- features -->
+        <div class="container-flex">
+
+          <!-- maybe a grid for sidebars-->
+        <div class="subgrid" id="f1">  
+            <div class="chart"><p>test</p></div>  
+
+            <div class="feat">
+                <img class="big" src="images/gate-nc-web.jpg" alt="#">
+                <h3>Samira</h3>
+                <dl>
+                    <dt>Hometown:</dt>
+                    <dd>Orlando, Florida</dd>
+                    <dt>Language:</dt>
+                    <dd>Japanese</dd>
+                </dl>
+                <p class="bio">
+                    Samira is a Health Education and Behavior student at the University of Florida.
+                </p>
+                <p>
+                    She can speak English, Bangla, French and Japanese. Speaking different languages has helped her broaden her communication skills and learn to appreciate other cultures and traditions.
+                </p>
+                <p>
+                    Her advice to language learners: “You need to continuously study because all the vocabulary or grammar you learn one day will disappear from you head the next.”
+                </p>
+            </div>
+            <div class="media"></div>
+            
+        </div>
+
+        <div class="subgrid" id="f2">  
+            <div class="chart"></div>  
+
+            <div class="feat">
+                <img class="big" src="images/gate-nc-web.jpg" alt="Tarragona">
+                <h3>Marc</h3>
+                <dl>
+                    <dt>Hometown:</dt>
+                    <dd>Tarragona</dd>
+                    <dt>Language:</dt>
+                    <dd>German</dd>
+                </dl>
+                <p class="bio">
+                    Marc is pursuing a doctorate in Mechanical Engineering at the University of Florida. He speaks 5 languages: Catalan, Spanish, English, German and French.
+                </p>
+                <p>
+                    He grew up in Catalonia, where both Catalan and Spanish are official languages. He learned both languages as a result, but considers Catalan to be his mother tongue.
+                </p>
+                <p>
+                    He decided to learn German at age 14, guided by his interest in engineering. Since Germany is a nexus for engineering in Europe, he knew he would eventually need to speak German to communicate with his colleagues. 
+                </p>
+                <p>
+                    He ended up pursuing a master’s degree in Germany.
+                </p>
+                <p>
+                    His best experience with the language? He is proud of defending his master’s thesis in German—followed closely by the first time he dreamt in German while living abroad. 
+                </p>
+                <p>
+                    His advice to language learners: “Practice, practice, practice. Don’t be shy; even if you aren’t totally confident, speaking is how I learned the most.”
+                </p>
+                <p>
+                    Marc used German to advance his engineering career. It just goes to show that if you can dream it, then you can do it. And if you’re lucky, you might even dream it in German.
+                </p>
+            </div>
+            <div class="media"></div>
+        </div>
+
+        <div class="subgrid" id="f3">  
+            <div class="chart"></div>  
+   
+            <div class="feat">
+                <img class="big" src="images/gate-nc-web.jpg" alt="#">
+                <h3>Irene</h3>
+                <dl>
+                    <dt>Hometown:</dt>
+                    <dd>Madrid, Spain</dd>
+                    <dt>Language:</dt>
+                    <dd>Catalan</dd>
+                </dl>
+                <p class="bio">
+                    Irene is currently pursuing a master’s degree in Mass Communications. She speaks Spanish, English, Catalan, French and a bit of German. A native Spanish speaker, she learned English and French in school. 
+                </p>
+                <p>
+                    She started learning Catalan when she began dating her husband from Tarragona, since he spoke with his friends and family in Catalan. 
+                </p>
+                <p>                    
+                    Learning languages has opened up many opportunities for her. She has studied in the United States in two different stints. Catalan has helped her grow closer with her husband’s family and friends. She has also found apologizing in Catalan an effective tool for placating an angry husband.  
+                </p>
+                <p>                    
+                    Her advice to language learners: immerse yourself in the language. Her English improved considerably when she started watching TV and reading books in English. For those looking to learn English, she found “Friends” to be a valuable resource.
+                </p>
+            </div>
+            <div class="media"></div>
+        </div>
+
+        <div class="subgrid" id="f4">
+            <div class="chart" id="bar_chart_div"></div>  
+
+            <div class="feat">
+                <img class="big" src="images/gate-nc-web.jpg" alt="#">
+                <h3>Haram</h3>
+                <dl>
+                    <dt>Hometown:</dt>
+                    <dd>Seoul, Korea</dd>
+                    <dt>Language:</dt>
+                    <dd>Mandarin</dd>
+                </dl>
+                <p class="bio">
+                        The University of Florida in Gainesville offers students many
+                        clubs and organizations that promote intercultural relations and
+                        language learning. Cultural groups put on public performances
+                        and holiday celebrations. There are theater groups and museums
+                        exhibits on display in the Cultural Plaza.
+                    </p>
+            </div>
+            <div class="media"></div>
+        </div>
+
+        <div class="subgrid" id="f5">  
+            <div class="chart"></div>  
+
+            <div class="feat">
+                <img class="big" src="images/gate-nc-web.jpg" alt="#">
+                <h3>Katie</h3>
+                <dl>
+                    <dt>Hometown:</dt>
+                    <dd>#</dd>
+                    <dt>Language:</dt>
+                    <dd>French</dd>
+                </dl>
+                <p class="bio">
+                        The University of Florida in Gainesville offers students many
+                        clubs and organizations that promote intercultural relations and
+                        language learning. Cultural groups put on public performances
+                        and holiday celebrations. There are theater groups and museums
+                        exhibits on display in the Cultural Plaza.
+                    </p>
+            </div>
+            <div class="media"></div>
+        </div>
+
+        <div class="subgrid" id="f6">  
+            <div class="chart"></div>  
+
+            <div class="feat">
+                <img class="big" src="images/gate-nc-web.jpg" alt="#">
+                <h3>Hunter</h3>
+                <dl>
+                    <dt>Hometown:</dt>
+                    <dd>#</dd>
+                    <dt>Language:</dt>
+                    <dd>French</dd>
+                </dl>
+                <p class="bio">
+                        The University of Florida in Gainesville offers students many
+                        clubs and organizations that promote intercultural relations and
+                        language learning. Cultural groups put on public performances
+                        and holiday celebrations. There are theater groups and museums
+                        exhibits on display in the Cultural Plaza.
+                    </p>
+            </div>
+            <div class="media"></div>
+        </div>
+        </div>
+
+
+
+
+    </main>
+
+    <footer>
+        This website was made for my Digital Storytelling and Coding and Web Apps graduate courses at the University of Florida.
+        <br>
+        &copy; 2019 Felipe De La Guerra.
+    </footer>
+    <script type="text/javascript" src="js/scripts.js"></script>
+    </body>
+</html>
